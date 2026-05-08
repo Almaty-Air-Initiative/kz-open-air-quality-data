@@ -9,7 +9,7 @@ Data is updated periodically as new information becomes available.
 ## 📊 Data
 
 Datasets are provided in CSV format and include:
-- PM2.5
+- **PM2.5** *(primary pollutant)*
 - PM10
 - NO2
 - SO2
@@ -18,12 +18,23 @@ Datasets are provided in CSV format and include:
 
 
 ## 🗂 Structure
-
-
-## ⚠️ Disclaimer
-
-This repository aggregates data from third-party sources.  
-All rights belong to original data providers.
+```bash
+kz-open-air-quality-data/
+│
+├── Kazhydromet/
+│   ├── kgm_{year}/ 
+│   │   ├── kgm_{year}_{month}.csv
+│   │   ├── ...
+│   │   └── stations.csv
+│   └── README.md
+│
+├── open_sensors/
+│   ├── {year}_data/ 
+│   │   ├── AAI_{year}_{month}.csv
+│   │   ├── ...
+│   │   └── README.md
+│   └── README.md
+```
 
 
 ## 🌍 Almaty Air Initiative 
