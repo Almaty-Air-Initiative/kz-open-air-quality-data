@@ -1,39 +1,61 @@
 # Air Quality Datasets (Kazakhstan / Almaty)
 
-Open repository of air quality datasets collected from various sources, including:
-- [Kazhydromet](https://www.kazhydromet.kz/en/ecology/ezhemesyachnyy-informacionnyy-byulleten-o-sostoyanii-okruzhayuschey-sredy) (Kazakhstan national monitoring network)
-- Other public, open-data, and research datasets
+Open repository of historical air quality datasets collected from multiple monitoring networks across Kazakhstan.
 
-Data is updated periodically as new information becomes available.
+The repository currently includes:
+- [Kazhydromet](https://www.kazhydromet.kz/en/ecology/ezhemesyachnyy-informacionnyy-byulleten-o-sostoyanii-okruzhayuschey-sredy) - the national environmental monitoring network of Kazakhstan.
+- Open sensors - crowdsourced low-cost sensor measurements from the Almaty Air Initiative network.
+
+All datasets are distributed in CSV format and are periodically updated as new data becomes available.
 
 ## 📊 Data
 
 Datasets are provided in CSV format and include:
-- **PM2.5** *(primary pollutant)*
-- PM10
-- NO2
-- SO2
-- CO
-- O3
-
+* PM2.5
+* PM10
+* NO₂
+* SO₂
+* CO
+* O₃
 
 ## 🗂 Structure
-```bash
+
+```
 kz-open-air-quality-data/
 │
 ├── Kazhydromet/
-│   ├── kgm_{year}/ 
-│   │   ├── kgm_{year}_{month}.csv
+│   ├── README.md
+│   ├── kgm_2024/
+│   │   ├── kgm_2024_01.csv
 │   │   ├── ...
 │   │   └── stations.csv
-│   └── README.md
+│   └── kgm_2025/
+│       ├── kgm_2025_01.csv
+│       ├── ...
+│       └── stations.csv
 │
 ├── open_sensors/
-│   ├── {year}_data/ 
-│   │   ├── AAI_{year}_{month}.csv
+│   ├── README.md
+│   ├── 2019.csv
+│   ├── 2020.csv
+│   ├── 2021.csv
+│   ├── 2022.csv
+│   ├── 2023_data/
+│   │   ├── AAI_2023_01.csv
 │   │   ├── ...
-│   │   └── README.md
-│   └── README.md
+│   │   └── AAI_2023_12.csv
+│   ├── 2024_data/
+│   │   ├── AAI_2024_01.csv
+│   │   ├── ...
+│   │   └── AAI_2024_12.csv
+│   └── 2025_data/
+│       ├── AAI_2025_01.csv
+│       ├── ...
+│       ├── AAI_2025_12.csv
+│       └── README.md
+│
+├── LICENSE
+└── README.md
 ```
 
 
