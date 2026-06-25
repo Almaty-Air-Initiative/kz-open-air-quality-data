@@ -54,7 +54,6 @@ kz-open-air-quality-data/
 │       ├── AAI_2025_12.csv
 │       └── README.md
 │
-├── LICENSE
 └── README.md
 ```
 
